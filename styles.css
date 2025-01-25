@@ -1,0 +1,197 @@
+/* ||Fonts */
+
+/* || Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* || Variables */
+
+:root {
+
+    /* Fonts */
+    --FF: sans-serif;
+    --FF-HEADING: serif;
+    --FS: clamp(1rem, 2vw, 1.75rem);
+
+    /* Colors */
+
+        /* BG Color */
+        --BGCOLOR: black;
+        --BODY-BGCOLOR: lightgrey;
+        --HEADER-BGCOLOR: #0033A0;
+        --CONTENT-BGCOLOR: grey;
+        --FOOTER-BGCOLOR: #FFFFFF;
+
+        /* Font Color */
+        --FCOLOR-DARK: #000;
+        --FCOLOR-LIGHT: #fff;
+
+}
+
+/* || Utility Classes*/
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.Left {
+    float: left;
+}
+
+.Right {
+    float: right;
+}
+
+.Icon {
+    transform: translate(-50%, 5%);
+}
+
+/* || General */
+
+html {
+    background-color: var(--BGCOLOR);
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    font-family: var(--FF);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--BODY-BGCOLOR);
+}
+
+h1, h2, h3 {
+    font-family: var(--FF-HEADING);
+    letter-spacing: 0.1em;
+    font-weight: 800;
+}
+
+h2, h3 {
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5;
+    padding: 0.25rem;
+}
+
+a:any-link {
+    color: black;
+}
+
+a:hover, a:focus-visible {
+    color: grey;
+}
+
+a:active {
+    color: white;
+}
+
+/* || HEADER */
+
+.Header {
+    display: block;
+    text-align: center;
+    background-color: var(--HEADER-BGCOLOR);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.Header__h1 {
+    padding: 0.5rem;
+    color: var(--FCOLOR-LIGHT);
+}
+
+
+/* || HERO */
+
+.Hero {
+    background-color: white;
+    height: 50vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-image: url(Images/Hero.jpeg);
+    background-attachment: fixed;
+}
+
+.Hero__text {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 1rem 1rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--FCOLOR-LIGHT);
+    border-radius: 20px;
+    width: 80%;
+}
+
+/* || CONTENT */
+
+.Main {
+    background-color: pink;
+}
+
+.Content {
+    background-color: var(--CONTENT-BGCOLOR);
+    padding: 1rem;
+}
+
+.Weather {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+}
+
+.Weather__ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: dodgerblue;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.Weather__li {
+    border: 3px solid black;
+    background-color: #fff;
+    margin: 0rem auto;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+/* || FOOTER */
+
+.Footer {
+    color: var(--FCOLOR-DARK);
+    position: sticky;
+    bottom: 0;
+    background-color: var(--FOOTER-BGCOLOR);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* || MEDIA */
