@@ -21,7 +21,7 @@ img {
     /* Fonts */
     --FF: sans-serif;
     --FF-HEADING: serif;
-    --FS: clamp(1rem, 2vw, 1.75rem);
+    --FS: clamp(0.75rem, 2vw, 1.75rem);
 
     /* Colors */
 
